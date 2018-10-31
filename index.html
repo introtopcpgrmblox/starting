@@ -1,0 +1,82 @@
+<html>
+<head>
+<title>All About *NAME*</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready( function	()	{
+	/*
+$("div").hide();
+$("button#family").click(function () {
+	$("div#familydiv").toggle();
+	});
+$("button#experience").click(function () {
+	$("div#experiencediv").toggle();
+	});
+$("button#activites").click(function () {
+	$("div#activitiesdiv").toggle();
+	});
+$("button#favorites").click(function () {
+	$("div#favoritesdiv").toggle();
+	});
+$("button#music").click(function () {
+	$("div#musicdiv").toggle();
+	*/
+	
+	$("button").click(function () {
+		$(this).next().css("background-color", "navy")
+		.toggle();
+});
+
+});
+</script>
+<style type="text/css">
+body {
+	background-color: blue;
+	color: white;
+}
+
+div {
+	background-color: navy;
+	color: yellow;
+	width: 50%;
+	margin: 25px auto;
+	padding: 10px;
+}
+img {
+	width: 100px;
+	
+}
+</style>
+</head>
+<body>
+<h1>All About Quinn</h1>
+<br>
+<button id="family">Show My Family</button>
+<div id="familydiv">
+<h3>My Family</h3>
+<p>I live with both of my parents and a younger sister</p>
+</div>
+<button id="experience">Show Experience with Programming</button>
+
+<div id="experiencediv">
+<h3>My experience with Computer Programing</h3>
+<p>I have done basic work with scripts and programming languages</p>
+</div>
+<button id="activites">Show My Activities</button>
+<div id="activitiesdiv">
+<h3>Activites</h3>
+<p>I typically just play on my pc</p>
+<img src="http://boganwatches.com/wp-content/uploads/2017/07/1844653322-1.jpg">
+</div>
+<button id="favorites">My Favorite and Least Favorite Classes</button>
+<div id="favoritesdiv">
+<h3>Favorite/Least favorite classes</h3>
+<p>I really like Intro to computer programming, but am not a big fan of physical education</p>
+</div>
+<button id="music">Show My "Favorite Music"</button>
+<div id="musicdiv">
+<h3>Favorite Music</h3>
+<p>I prefer not to talk about my favorite music</p>
+</div>
+</body>
+</html>
